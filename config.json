@@ -1,0 +1,25 @@
+{
+  "model": {
+    "path": "model/Plant_Disease_Detection.h5",
+    "input_size": [224, 224],
+    "num_classes": 38
+  },
+  "data": {
+    "class_indices_path": "assets/class_indices.json"
+  },
+  "app": {
+    "title": "Plant Disease Classifier",
+    "description": "AI-powered plant disease detection from leaf images",
+    "max_file_size": "10MB",
+    "supported_formats": ["jpg", "jpeg", "png"]
+  },
+  "prediction": {
+    "confidence_threshold": 0.5,
+    "show_top_n": 3
+  },
+  "ui": {
+    "theme": "green",
+    "layout": "wide",
+    "sidebar_expanded": true
+  }
+}
