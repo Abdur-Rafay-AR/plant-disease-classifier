@@ -130,6 +130,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🙏 Acknowledgments
 
-- Dataset and model training based on plant disease classification datasets
-- Streamlit for providing an excellent web app framework
-- TensorFlow/Keras for deep learning capabilities
+- **[Mukku27](https://github.com/Mukku27)** for developing the plant disease detection model, which served as the foundation for this project.
+- Dataset and model training based on plant disease classification datasets.
+- Streamlit for providing an excellent web app framework.
+- TensorFlow/Keras for deep learning capabilities.
