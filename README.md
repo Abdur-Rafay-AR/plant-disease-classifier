@@ -63,17 +63,13 @@ plant-disease-classifier/
 │   └── predict.py             # Prediction utility functions
 ├── model/
 │   └── Plant_Disease_Detection.h5  # Pre-trained model
+
 ├── assets/
 │   └── class_indices.json     # Class label mappings
 ├── requirements.txt           # Python dependencies
 ├── README.md                 # Project documentation
 └── .gitignore               # Git ignore rules
 ```
-
-## 🎯 Supported Plant Diseases
-
-The model can classify the following plant diseases:
-
 ### Apple
 - Apple Scab
 - Black Rot
@@ -83,7 +79,7 @@ The model can classify the following plant diseases:
 ### Corn (Maize)
 - Cercospora Leaf Spot / Gray Leaf Spot
 - Common Rust
-- Northern Leaf Blight
+│   └── Plant_Disease_Detection.h5  # Pre-trained model ([source](https://github.com/Mukku27/Plant_Disease_Detection/tree/main/App/Trained_model))
 - Healthy
 
 ### Grape
@@ -130,7 +126,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🙏 Acknowledgments
 
-- **[Mukku27](https://github.com/Mukku27)** for developing the plant disease detection model, which served as the foundation for this project.
-- Dataset and model training based on plant disease classification datasets.
-- Streamlit for providing an excellent web app framework.
-- TensorFlow/Keras for deep learning capabilities.
+- Dataset and model training based on plant disease classification datasets
+- Streamlit for providing an excellent web app framework
+- TensorFlow/Keras for deep learning capabilities
