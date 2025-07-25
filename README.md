@@ -22,12 +22,21 @@ git clone https://github.com/Abdur-Rafay-AR/plant-disease-classifier.git
 cd plant-disease-classifier
 ```
 
-2. Create a virtual environment:
+2. **Download the pre-trained model**:
+   
+   The trained model is not included in this repository due to file size constraints. Download it from:
+   ```
+   https://github.com/Mukku27/Plant_Disease_Detection/tree/main/App/Trained_model
+   ```
+   
+   Download the `Plant_Disease_Detection.h5` file and place it in the `model/` directory of this project.
+
+3. Create a virtual environment:
 ```bash
 python -m venv .venv
 ```
 
-3. Activate the virtual environment:
+4. Activate the virtual environment:
 ```bash
 # Windows
 .venv\Scripts\activate
@@ -36,23 +45,25 @@ python -m venv .venv
 source .venv/bin/activate
 ```
 
-4. Install dependencies:
+5. Install dependencies:
 ```bash
 pip install -r requirements.txt
 ```
 
 ## 📖 Usage
 
-1. Run the Streamlit application:
+1. **Important**: Ensure you have downloaded the model file as described in the installation steps above.
+
+2. Run the Streamlit application:
 ```bash
 streamlit run app.py
 ```
 
-2. Open your web browser and navigate to `http://localhost:8501`
+3. Open your web browser and navigate to `http://localhost:8501`
 
-3. Upload a leaf image using the file uploader
+4. Upload a leaf image using the file uploader
 
-4. View the prediction results with confidence scores
+5. View the prediction results with confidence scores
 
 ## 🗂️ Project Structure
 
@@ -62,14 +73,20 @@ plant-disease-classifier/
 ├── utils/
 │   └── predict.py             # Prediction utility functions
 ├── model/
-│   └── Plant_Disease_Detection.h5  # Pre-trained model
-
+│   └── Plant_Disease_Detection.h5  # Pre-trained model (download required)
 ├── assets/
 │   └── class_indices.json     # Class label mappings
 ├── requirements.txt           # Python dependencies
 ├── README.md                 # Project documentation
 └── .gitignore               # Git ignore rules
 ```
+
+**Note**: The `Plant_Disease_Detection.h5` model file must be downloaded separately from the link provided in the installation instructions.
+
+## 🎯 Supported Plant Diseases
+
+The model can classify the following plant diseases:
+
 ### Apple
 - Apple Scab
 - Black Rot
@@ -79,7 +96,7 @@ plant-disease-classifier/
 ### Corn (Maize)
 - Cercospora Leaf Spot / Gray Leaf Spot
 - Common Rust
-│   └── Plant_Disease_Detection.h5  # Pre-trained model ([source](https://github.com/Mukku27/Plant_Disease_Detection/tree/main/App/Trained_model))
+- Northern Leaf Blight
 - Healthy
 
 ### Grape
@@ -127,5 +144,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 🙏 Acknowledgments
 
 - Dataset and model training based on plant disease classification datasets
+- Pre-trained model courtesy of [Mukku27's Plant Disease Detection project](https://github.com/Mukku27/Plant_Disease_Detection)
 - Streamlit for providing an excellent web app framework
 - TensorFlow/Keras for deep learning capabilities
